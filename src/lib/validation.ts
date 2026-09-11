@@ -32,7 +32,6 @@ export type CouponCreateInput = z.infer<typeof couponCreateSchema>;
 
 export const despensaCreateSchema = z.object({
   nombre: z.string().min(1, "El artículo necesita un nombre").max(120),
-  costo: z.number().min(0, "El costo no puede ser negativo").optional(),
 });
 
 export type DespensaCreateInput = z.infer<typeof despensaCreateSchema>;

@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     data: {
       spaceId: session.spaceId,
       nombre: parsed.data.nombre,
-      costo: parsed.data.costo ?? 0,
+      costo: 0,
     },
   });
   return NextResponse.json(item, { status: 201 });
