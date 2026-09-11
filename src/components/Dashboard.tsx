@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 import type { CouponDTO, MemberPublic } from "@/lib/types";
 import { CouponCard } from "./CouponCard";
@@ -94,6 +95,13 @@ export function Dashboard() {
           </button>
         </div>
       </header>
+
+      <nav className="mt-4 flex gap-2">
+        <span className="rounded-lg bg-rose-600 px-4 py-1.5 text-sm font-medium text-white">Cupones</span>
+        <Link href="/despensa" className="rounded-lg border border-slate-300 px-4 py-1.5 text-sm text-slate-600 hover:bg-slate-100 dark:border-slate-600">
+          Despensa
+        </Link>
+      </nav>
 
       <section className="mt-6 space-y-3">
         {mine.length === 0 ? (

@@ -124,4 +124,3 @@ engine y todo compila normal. Si algo falla al construir, es casi seguro que sea
 - PIN = seguridad "suficiente para esto". Si alguna vez guardas algo sensible, sube a auth por
   email/contraseña o magic link.
 - Una instancia = una pareja. Para varias parejas habría que reintroducir el concepto de registro.
-
